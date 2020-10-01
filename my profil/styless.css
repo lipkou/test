@@ -58,21 +58,40 @@ header img:hover {
   transform: scale(1.09) rotate(4deg);
 }
 
+.animaion {
+  transition: color 0.5s ease, background-color 0.5s ease, border-radius 1s ease, border 1s ease;
+}
+
 .tag {
   background-color: #EDE01C;
   display: table;
-  margin: 10px auto;
+  margin: 15px auto;
   padding: 10px;
   border-radius: 10px;
   border: 2px solid #000;
 }
 
-.tag sub-title {
-  background-color: #252B2B;
+.tag:hover {
+  color: #fff;
+  background-color: #000;
+  border: 7px solid #F4DF0D;
+  border-radius: 10px;
+}
+
+.animaion2 {
+  transition: color 0.5s ease, background-color 0.5s ease, border-radius 1s ease, border 1s ease;
+}
+
+.tag2 {
+  background-color: #000;
   display: table;
   margin: 10px auto;
   padding: 10px;
   border-radius: 10px;
+}
+
+.tag2:hover {
+  color: #F46C0D;
 }
 
 .sub-title {
@@ -109,12 +128,48 @@ footer {
 
 .tag-yellow {
   background-color: #EDE01C;
+  width: auto;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin: 5px;
 }
 
 .tag-blue {
   background-color: #11A3D5;
+  width: auto;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin: 5px;
 }
 
 h3 {
   color: #E67300;
+}
+
+.discord {
+  margin: 10px;
+  width: 50px;
+}
+
+.transition {
+  transition: width 20s ease, border-radius 20s ease, color 20s ease, background-color 17s linear, border 20s ease;
+}
+
+.troll {
+  width: 30px;
+  background-color: #2780C1;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  margin: 15px;
+}
+
+.troll:hover {
+  width: 200px;
+  border-radius: 500px;
+  color: #000;
+  background-color: #EA1310;
+  border: 20px solid #1AF104;
 }
