@@ -11,13 +11,19 @@ body{
 a {
   text-decoration: none;
   color: #0499ff;
+  transition: all .5s;
 }
+
 .nav {
   min-height: 45px;
   background-color: #000;
   text-align: center;
   padding: 10px;
   font-weight: 600;
+  position: fixed 0px 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
 
 .menu {
@@ -25,8 +31,8 @@ a {
   flex-flow: row;
   color: #fff;
   list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   justify-content: space-around;
 }
 
@@ -40,7 +46,7 @@ a {
 }
 
 header {
-  padding-top: 40px;
+  padding-top: 84px;
   width: 100%;
   height: 500px;
   background-image: url('https://i.pinimg.com/originals/f0/e4/0e/f0e40eecb15886c55636cdcdd50924c1.jpg');
@@ -59,22 +65,24 @@ header img:hover {
 }
 
 .animaion {
-  transition: color 0.5s ease, background-color 0.5s ease, border-radius 1s ease, border 1s ease;
+  transition: color 0.5s ease, background-color 0.5s ease, border-radius 1s ease, border 0.5s linear;
 }
 
 .tag {
   background-color: #EDE01C;
   display: table;
+  flex-flow: row;
   margin: 15px auto;
   padding: 10px;
   border-radius: 10px;
   border: 2px solid #000;
+  justify-content: center;
 }
 
 .tag:hover {
   color: #fff;
   background-color: #000;
-  border: 7px solid #F4DF0D;
+  border: 5px solid #F4DF0D;
   border-radius: 10px;
 }
 
@@ -109,7 +117,6 @@ header img:hover {
   width: 500px;
   margin: 10px;
   padding: 20px;
-
   border-bottom: 3px solid grey;
   border-radius: 5px;
 }
@@ -148,28 +155,118 @@ h3 {
   color: #E67300;
 }
 
+.sponsors {
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 800px;
+  display: flex;
+  flex-flow: column;
+
+}
+
 .discord {
-  margin: 10px;
+  margin: 5px;
   width: 50px;
+  height: 50px;
 }
 
 .transition {
-  transition: width 20s ease, border-radius 20s ease, color 20s ease, background-color 17s linear, border 20s ease;
+  transition: width 30s ease, border-radius 20s ease, color 30s ease, background-color 27s linear, border 30s ease, height 30s ease;
 }
 
 .troll {
-  width: 30px;
+  text-align: center;
+  width: 100px;
+  height: 30px;
   background-color: #2780C1;
   border-radius: 5px;
   color: #fff;
   padding: 5px;
-  margin: 15px;
+  margin: 5px;
 }
 
 .troll:hover {
-  width: 200px;
-  border-radius: 500px;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
   color: #000;
   background-color: #EA1310;
-  border: 20px solid #1AF104;
+  border: 10px solid #1AF104;
+}
+
+p {
+  margin: 5px;
+}
+
+.Experience {
+  background-color: #DAFFD4;
+}
+
+.are-you-here {
+  color: #8A00E9 ;
+  padding: 3px;
+  border-bottom: 4px solid #232323;
+  border-radius: 5px;
+}
+
+.detalis {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Welkome {
+  text-align: center;
+  color: #1AAFD5;
+  margin: 10px;
+  border: 5px;
+  height: 40px;
+  width: 200px;
+}
+
+.prolog {
+  text-align: center;
+  background-color: #050606;
+  border: 5px solid #06CCFE;
+  border-radius: 15px;
+  padding: 12px;
+  margin: 20px;
+  color: #fff;
+}
+
+.test {
+  width: 1000px;
+  height: 500px;
+  border-radius: 10px;
+  border: 3px solid #000;
+  }
+
+.image-relative {
+  position: relative;
+}
+
+.image-relative:hover .secret-text {
+  display: flex;
+  border-radius: 10px;
+}
+
+.secret-text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.secret-text h2 {
+  text-align: center;
 }
